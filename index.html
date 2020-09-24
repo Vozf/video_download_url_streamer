@@ -9,12 +9,15 @@
 
         </div>
         <div class='container'>
+        <form onsubmit="return readlink()">
+        
           <div class="form-group">
             <label for="link">Video download link:</label>
-            <input type="email" class="form-control" id="link" aria-describedby="emailHelp" placeholder="Enter video link">
-            <small id="emailHelp" class="form-text text-muted">example: <br> https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4</small>
-            <button type="submit" onclick="readlink()" class="btn btn-primary">Submit</button>
+            <input type="url" class="form-control" id="link" placeholder="Enter video link">
+            <small  class="form-text text-muted">example: <br> https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4</small>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
+        </form>
 
             <video id='video' src="" controls></video>
 
@@ -26,4 +29,3 @@
       </body>
 
     </html>
-
